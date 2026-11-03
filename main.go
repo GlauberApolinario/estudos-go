@@ -21,7 +21,21 @@ func main() {
 	   	fmt.Println("Li o livro", livro, "que tem", paginas, "paginas. O", status, "de ler") */
 
 	//Parte 2 - For
-	for i := 1; i <= 7; i++ {
-		fmt.Println("Dia", i, "cheguei na pagina", i*30)
+	// for i := 1; i <= 7; i++ {
+	// 	fmt.Println("Dia", i, "cheguei na pagina", i*30)
+	// }
+
+	//Desafio
+	//Em quantos dias você termina um livro de 300 páginas lendo 35 por dia?
+
+	paginas := 0
+	dias := 0
+
+	for paginas < 300 {
+		dias++
+		paginas += 35
 	}
+
+	fmt.Println("Para ler um livro de 300 páginas, eu levarei", dias, "dias.")
+
 }
